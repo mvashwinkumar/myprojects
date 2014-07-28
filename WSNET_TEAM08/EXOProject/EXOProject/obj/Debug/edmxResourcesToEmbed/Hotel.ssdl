@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="HotelDBModelStoreContainer">
+    <EntitySet Name="Cust" EntityType="HotelDBModel.Store.Cust" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Login" EntityType="HotelDBModel.Store.Login" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Order" EntityType="HotelDBModel.Store.Order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Room" EntityType="HotelDBModel.Store.Room" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Cust_Login" Association="HotelDBModel.Store.FK_Cust_Login">
+      <End Role="Login" EntitySet="Login" />
+      <End Role="Cust" EntitySet="Cust" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Cust" Association="HotelDBModel.Store.FK_Order_Cust">
+      <End Role="Cust" EntitySet="Cust" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Room" Association="HotelDBModel.Store.FK_Order_Room">
+      <End Role="Room" EntitySet="Room" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cust">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Name="CID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Sex" Type="nchar" MaxLength="10" />
+    <Property Name="Mobile" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="NOKName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NOKContact" Type="nvarchar" MaxLength="50" />
+    <Property Name="NOKAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="Passport" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Security Question" Type="nvarchar" MaxLength="50" />
+    <Property Name="Answer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="nchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RID" Type="int" Nullable="false" />
+    <Property Name="CID" Type="int" Nullable="false" />
+    <Property Name="DateIn" Type="datetime" Nullable="false" />
+    <Property Name="DateOut" Type="datetime" Nullable="false" />
+    <Property Name="PaxCount" Type="int" Nullable="false" />
+    <Property Name="RoomCount" Type="int" Nullable="false" />
+    <Property Name="SpecialRequest" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RID" />
+    </Key>
+    <Property Name="RID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Capacity" Type="int" Nullable="false" />
+    <Property Name="Summary" Type="nvarchar(max)" />
+    <Property Name="Amenities" Type="nvarchar(max)" />
+    <Property Name="Price" Type="float" Nullable="false" />
+    <Property Name="Type" Type="nchar" MaxLength="10" />
+    <Property Name="ImageURL" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Cust_Login">
+    <End Role="Login" Type="HotelDBModel.Store.Login" Multiplicity="1" />
+    <End Role="Cust" Type="HotelDBModel.Store.Cust" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="UID" />
+      </Principal>
+      <Dependent Role="Cust">
+        <PropertyRef Name="UID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Cust">
+    <End Role="Cust" Type="HotelDBModel.Store.Cust" Multiplicity="1" />
+    <End Role="Order" Type="HotelDBModel.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cust">
+        <PropertyRef Name="CID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Room">
+    <End Role="Room" Type="HotelDBModel.Store.Room" Multiplicity="1" />
+    <End Role="Order" Type="HotelDBModel.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="RID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="RID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="HotelDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Custs" EntityType="HotelDBModel.Cust" />
+    <EntitySet Name="Logins" EntityType="HotelDBModel.Login" />
+    <EntitySet Name="Orders" EntityType="HotelDBModel.Order" />
+    <EntitySet Name="Rooms" EntityType="HotelDBModel.Room" />
+    <AssociationSet Name="FK_Cust_Login" Association="HotelDBModel.FK_Cust_Login">
+      <End Role="Login" EntitySet="Logins" />
+      <End Role="Cust" EntitySet="Custs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Cust" Association="HotelDBModel.FK_Order_Cust">
+      <End Role="Cust" EntitySet="Custs" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Room" Association="HotelDBModel.FK_Order_Room">
+      <End Role="Room" EntitySet="Rooms" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cust">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Name="CID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="UID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Sex" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Mobile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NOKName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NOKContact" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NOKAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Passport" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Login" Relationship="HotelDBModel.FK_Cust_Login" FromRole="Cust" ToRole="Login" />
+    <NavigationProperty Name="Orders" Relationship="HotelDBModel.FK_Order_Cust" FromRole="Cust" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Security_Question" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Answer" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="Custs" Relationship="HotelDBModel.FK_Cust_Login" FromRole="Login" ToRole="Cust" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RID" Type="Int32" Nullable="false" />
+    <Property Name="CID" Type="Int32" Nullable="false" />
+    <Property Name="DateIn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateOut" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PaxCount" Type="Int32" Nullable="false" />
+    <Property Name="RoomCount" Type="Int32" Nullable="false" />
+    <Property Name="SpecialRequest" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Cust" Relationship="HotelDBModel.FK_Order_Cust" FromRole="Order" ToRole="Cust" />
+    <NavigationProperty Name="Room" Relationship="HotelDBModel.FK_Order_Room" FromRole="Order" ToRole="Room" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RID" />
+    </Key>
+    <Property Name="RID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Capacity" Type="Int32" Nullable="false" />
+    <Property Name="Summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Amenities" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="ImageURL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Orders" Relationship="HotelDBModel.FK_Order_Room" FromRole="Room" ToRole="Order" />
+  </EntityType>
+  <Association Name="FK_Cust_Login">
+    <End Role="Login" Type="HotelDBModel.Login" Multiplicity="1" />
+    <End Role="Cust" Type="HotelDBModel.Cust" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="UID" />
+      </Principal>
+      <Dependent Role="Cust">
+        <PropertyRef Name="UID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Cust">
+    <End Role="Cust" Type="HotelDBModel.Cust" Multiplicity="1" />
+    <End Role="Order" Type="HotelDBModel.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cust">
+        <PropertyRef Name="CID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Room">
+    <End Role="Room" Type="HotelDBModel.Room" Multiplicity="1" />
+    <End Role="Order" Type="HotelDBModel.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="RID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="RID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
