@@ -1,0 +1,102 @@
+<div class="modal-body">
+    <div class="row" style="padding:10px">
+
+        <div id="msgPane"></div>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div id="modalBody">
+            <form method="post" action="#" id="editCustomerForm" class="form-horizontal">
+                <fieldset>
+                    <legend>Edit User Profile</legend>
+
+                    <div class="form-group">
+                        <label for="Name" class="col-lg-3 control-label">Name : </label>
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control" required name="name" placeholder="Enter your full name" id="NameTxt" value="{{name}}"/>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="DateOfBirth" class="col-lg-3 control-label">Date Of Birth : </label>
+                        <div class="col-lg-7">
+                            <!--                        <input type="date" class="form-control" name="dob" id="DateOfBirthTxt"/>-->
+                            <input type="text" value="{{dateFormat dob}}" class="form-control" name="dob" id="dob" placeholder="Click to select a date">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Gender" class="col-lg-3 control-label">Gender :</label>
+                        <div class="col-lg-7">
+                            <div class="radio-inline">
+                                <input type="radio" id="genderoptionM" name="gender" value="Male" {{radioCheck gender "Male"}}>Male
+                            </div>
+                            <div class="radio-inline">
+                                <input type="radio"  name="gender" value="Female" id="genderoptionF" {{radioCheck gender "Female"}}>Female
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Address" class="col-lg-3 control-label">Address:</label>
+                        <div class="col-lg-7">
+                            <textarea class="form-control" rows="3" id="Address" name="address">{{address}}</textarea>
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+                    <input type="hidden" value="{{customerId}}" name="customerId">
+
+                    <input type="hidden" value="{{username.username}}" class="form-control" required name="username" placeholder="Enter your Username" id="UsernameTxt"/>
+
+
+                    <div class="form-group">
+                        <label for="Password" class="col-lg-3 control-label">Password : </label>
+                        <div class="col-lg-7">
+                            <input type="password" value="{{username.password}}" class="form-control" required name="password" placeholder="Enter your Password" id="PasswordTxt"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ConfirmPassword" class="col-lg-3 control-label">Confirm Password : </label>
+                        <div class="col-lg-7">
+                            <input type="password" value="{{username.password}}" class="form-control" required name="ConfirmPassword" placeholder="Enter your Password again" id="ConfirmPasswordTxt"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-7 col-lg-offset-3">
+                            <button type="button" name="button" value="Register" id="submitEditProfileBtn" class="btn btn-primary">Update</button>&nbsp;&nbsp;
+                            <button type="button" name="button" value="Register" id="cancelEditProfileBtn" class="btn btn-danger">Cancel</button>&nbsp;&nbsp;
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(function() {
+        $("#cancelEditProfileBtn").click(function() {
+            $("#myModal").modal('hide');
+        });
+        $("#submitEditProfileBtn").click(updateCustomer);
+        //------------update form--------------
+        
+        $("#dob").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: "yy-mm-dd"
+        });
+        //
+
+
+
+
+
+        //------failure---------
+
+    });
+</script>

@@ -1,0 +1,80 @@
+
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="lblProductName" data-productName="{{name}}">{{name}}</h3>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <img class="img-thumbnail" src="{{imgPath}}" width="200"><br>
+                        <label>Quantity Available : </label> <label class="label label-success rounded" id="lblQty" data-qty="{{quantity}}">{{quantity}}</label>
+                    </div>
+                    <div class="col-md-8">
+                        <p>{{description}}</p>
+                        
+                        {{#hasDiscount discount}}
+                        <div style="float:right">
+                        <p style="padding:0px;margin:0px"><label id="lblWasPrice" data-price="{{price}}"><strike>Was: {{currency price}}</strike></label></p>
+                        
+                        <p style="padding:0px;margin:0px"><label id="lblPrice" data-price="{{price}}">Now: {{currency (finalPrice price discount)}}</label></p>
+                        </div>
+                        {{else}}
+                        <label style="float:right" id="lblPrice" data-price="{{price}}">Prices: {{currency price}}</label>
+                        {{/hasDiscount}}
+                        <input type="hidden" id="hiddenDiscount" value="{{discount}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-xs-2">
+                        {{#isSubscribed inventoryId}}
+                            <button class="btn btn-default btn-sm" id="btnSubscribe" data-action="unsub">Unsubscribe</button>
+                        {{else}}
+                            <button class="btn btn-default btn-sm" id="btnSubscribe" data-action="sub">Subscribe</button>
+                        {{/isSubscribed}}
+                    </div>
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="form-group col-xs-8">
+                            <div class="col-xs-4 col-xs-offset-2">
+                            <label for="addQty" style="padding-top:5px">Quantity:</label>
+                            </div>
+                            <div class="col-xs-6">
+                            <input id="qtyToAdd" type="number" class="form-control numberInput" placeholder="Enter Amt" value="0">
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <button id="btnAddToCart" class="btn btn-primary btn-sm">Add to Cart <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                        </div>                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="alert rounded hide" id="msgPane" style="padding:0.5em">&nbps;</div>
+                </div>
+            </div>
+        </div>
+
+<script type="text/javascript">
+    $(function() {
+        $(".numberInput").focus(function(event) {
+            console.log("focus");
+            $(this).data("ex", $(this).val());
+        });
+        $(".numberInput").blur(function(event) {
+
+            var str = $(this).val();
+            console.log(str);
+            if (str == "")
+            {
+                $(this).val($(this).data("ex"));
+                console.log($(this).data("ex"));
+            }
+        });
+    });
+</script>

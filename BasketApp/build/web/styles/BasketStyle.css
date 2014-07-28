@@ -1,0 +1,211 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 29, 2014, 9:58:45 PM
+    Author     : yc
+*/
+
+.basket-nav
+{
+    height:60px;
+    margin:5px;
+        
+}
+.fill
+{
+    position:relative;
+    height:100%;
+    min-height:100%;
+}
+body
+{
+    height: 100%;
+}
+html
+{
+    min-height:100%;
+}
+.btn-loading
+{
+    background-image: url('/BasketApp/images/loading.gif');
+    background-position-y: center;
+    background-position-x: center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    
+    padding-left:40px;
+}
+
+.div-loading
+{
+    position:relative;
+    background-image:url('/BasketApp/images/loading.gif');
+    background-position:center;
+    background-repeat: no-repeat;    
+    z-index: 1002;
+}
+
+.well
+{
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+label.errorClass
+{
+    color:white;
+    background-color:red;
+    border-radius:5px;
+    margin-top:5px;
+    padding:2px;
+}
+
+.img-thumbnail
+{
+    border-radius:10px;    
+}
+
+.rounded
+{
+    border_radius:5px;
+}
+
+.btn-nav
+{
+    cursor: pointer;
+    float:right;
+    color:black;
+}
+.btn-nav:hover
+{
+    color:red;
+}
+a.list-group-item.discount
+{
+    background-color: palegoldenrod;
+    
+}
+a.list-group-item.discount:hover
+{
+    background-color: orange;    
+    color:#ffffff;
+}
+
+.toast
+{
+    position:absolute;
+    width:300px;
+    height:50px;
+    background-color:rgba(0,0,0,0.5);
+    padding:5px;
+    box-shadow:0px 0px 20px #888888;
+    color:white;
+    border-radius:5px;
+}
+.modal {
+ overflow-y: auto;
+}
+
+.modal-open {
+ overflow: auto;
+}
+
+//Twitter Typeahead CSS
+//Updated 22 August 2013
+.twitter-typeahead {
+    width: 100%;
+    position: relative;
+}
+ 
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+    margin-bottom: 0;
+    width:100%;
+    height: 34px;
+    position: absolute;
+    top:0;
+    left:0;
+    
+}
+ 
+.twitter-typeahead .tt-hint {
+    color:#a1a1a1;
+    z-index: 1;
+    
+    border:1px solid transparent;
+}
+ 
+.twitter-typeahead .tt-query {
+    z-index: 2;
+    border-radius: 4px!important;
+     //add these 2 statements if you have an appended input group 
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+     //add these 2 statements if you have an prepended input group 
+     border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+ 
+.tt-dropdown-menu {
+    min-width: 160px;
+    margin-top: 2px;
+    padding: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+ 
+.tt-suggestion {
+    display: block;    
+    padding: 3px 20px;
+}
+ 
+.tt-suggestion:hover{
+    color: #fff;
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+    background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+}
+.tt-suggestion.tt-cursor
+{
+    color: #fff;
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+    background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)   
+}
+ 
+
+.tt-suggestion p {
+    margin: 0;
+    
+}
+.form-control{
+    z-index:1500;
+}
+
+.tooltip.right{
+    min-width:300px;
+    
+}
