@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LibraryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="LibraryModelStoreContainer">
+          <EntitySet Name="Books" EntityType="LibraryModel.Store.Books" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Members" EntityType="LibraryModel.Store.Members" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Staff" EntityType="LibraryModel.Store.Staff" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tran" EntityType="LibraryModel.Store.Tran" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Tran_Books" Association="LibraryModel.Store.FK_Tran_Books">
+            <End Role="Books" EntitySet="Books" />
+            <End Role="Tran" EntitySet="Tran" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tran_Members" Association="LibraryModel.Store.FK_Tran_Members">
+            <End Role="Members" EntitySet="Members" />
+            <End Role="Tran" EntitySet="Tran" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Books">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="BookName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Author" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Publisher" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Category" Type="nvarchar" MaxLength="10" />
+          <Property Name="TotalStock" Type="int" Nullable="false" />
+          <Property Name="NumberLended" Type="int" Nullable="false" />
+          <Property Name="Location" Type="nvarchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Members">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="MemberName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PhoneNumber" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Staff">
+          <Key>
+            <PropertyRef Name="StaffID" />
+          </Key>
+          <Property Name="StaffID" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="StaffName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="StaffPassword" Type="nvarchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Tran">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="BookID" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="MemberID" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="IssueDate" Type="datetime" Nullable="false" />
+          <Property Name="DueDate" Type="datetime" Nullable="false" />
+          <Property Name="ReturnDate" Type="datetime" />
+          <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Tran_Books">
+          <End Role="Books" Type="LibraryModel.Store.Books" Multiplicity="1" />
+          <End Role="Tran" Type="LibraryModel.Store.Tran" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Books">
+              <PropertyRef Name="BookID" />
+            </Principal>
+            <Dependent Role="Tran">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tran_Members">
+          <End Role="Members" Type="LibraryModel.Store.Members" Multiplicity="1" />
+          <End Role="Tran" Type="LibraryModel.Store.Tran" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Members">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="Tran">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LibraryModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="LibraryEntities6" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Books" EntityType="LibraryModel.Book" />
+          <EntitySet Name="Members" EntityType="LibraryModel.Member" />
+          <EntitySet Name="Staffs" EntityType="LibraryModel.Staff" />
+          <EntitySet Name="Trans" EntityType="LibraryModel.Tran" />
+          <AssociationSet Name="FK_Tran_Books" Association="LibraryModel.FK_Tran_Books">
+            <End Role="Books" EntitySet="Books" />
+            <End Role="Tran" EntitySet="Trans" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tran_Members" Association="LibraryModel.FK_Tran_Members">
+            <End Role="Members" EntitySet="Members" />
+            <End Role="Tran" EntitySet="Trans" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="BookName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Author" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Publisher" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Category" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="TotalStock" Type="Int32" Nullable="false" />
+          <Property Name="NumberLended" Type="Int32" Nullable="false" />
+          <Property Name="Location" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Trans" Relationship="LibraryModel.FK_Tran_Books" FromRole="Books" ToRole="Tran" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="MemberName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Trans" Relationship="LibraryModel.FK_Tran_Members" FromRole="Members" ToRole="Tran" />
+        </EntityType>
+        <EntityType Name="Staff">
+          <Key>
+            <PropertyRef Name="StaffID" />
+          </Key>
+          <Property Name="StaffID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="StaffName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="StaffPassword" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tran">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="BookID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="MemberID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="IssueDate" Type="DateTime" Nullable="false" />
+          <Property Name="DueDate" Type="DateTime" Nullable="false" />
+          <Property Name="ReturnDate" Type="DateTime" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Remarks" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Book" Relationship="LibraryModel.FK_Tran_Books" FromRole="Tran" ToRole="Books" />
+          <NavigationProperty Name="Member" Relationship="LibraryModel.FK_Tran_Members" FromRole="Tran" ToRole="Members" />
+        </EntityType>
+        <Association Name="FK_Tran_Books">
+          <End Role="Books" Type="LibraryModel.Book" Multiplicity="1" />
+          <End Role="Tran" Type="LibraryModel.Tran" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Books">
+              <PropertyRef Name="BookID" />
+            </Principal>
+            <Dependent Role="Tran">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tran_Members">
+          <End Role="Members" Type="LibraryModel.Member" Multiplicity="1" />
+          <End Role="Tran" Type="LibraryModel.Tran" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Members">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="Tran">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="LibraryEntities6">
+          <EntitySetMapping Name="Books"><EntityTypeMapping TypeName="LibraryModel.Book"><MappingFragment StoreEntitySet="Books">
+            <ScalarProperty Name="BookID" ColumnName="BookID" />
+            <ScalarProperty Name="BookName" ColumnName="BookName" />
+            <ScalarProperty Name="Author" ColumnName="Author" />
+            <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+            <ScalarProperty Name="Category" ColumnName="Category" />
+            <ScalarProperty Name="TotalStock" ColumnName="TotalStock" />
+            <ScalarProperty Name="NumberLended" ColumnName="NumberLended" />
+            <ScalarProperty Name="Location" ColumnName="Location" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Members"><EntityTypeMapping TypeName="LibraryModel.Member"><MappingFragment StoreEntitySet="Members">
+            <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+            <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+            <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Staffs"><EntityTypeMapping TypeName="LibraryModel.Staff"><MappingFragment StoreEntitySet="Staff">
+            <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+            <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+            <ScalarProperty Name="StaffPassword" ColumnName="StaffPassword" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Trans"><EntityTypeMapping TypeName="LibraryModel.Tran"><MappingFragment StoreEntitySet="Tran">
+            <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+            <ScalarProperty Name="BookID" ColumnName="BookID" />
+            <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+            <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+            <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+            <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+            <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EntityLibrary" ZoomLevel="92">
+        <EntityTypeShape EntityType="LibraryModel.Book" Width="1.5" PointX="0.75" PointY="1.125" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryModel.Member" Width="1.5" PointX="0.75" PointY="5.5" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryModel.Staff" Width="1.5" PointX="2.75" PointY="4.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryModel.Tran" Width="1.5" PointX="3" PointY="1" Height="2.9417936197916656" IsExpanded="true" />
+        <AssociationConnector Association="LibraryModel.FK_Tran_Books" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.49974609375" />
+          <ConnectorPoint PointX="3" PointY="2.49974609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="LibraryModel.FK_Tran_Members" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="6.9442350260416665" />
+          <ConnectorPoint PointX="4.40625" PointY="6.9442350260416665" />
+          <ConnectorPoint PointX="4.40625" PointY="3.9417936197916656" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

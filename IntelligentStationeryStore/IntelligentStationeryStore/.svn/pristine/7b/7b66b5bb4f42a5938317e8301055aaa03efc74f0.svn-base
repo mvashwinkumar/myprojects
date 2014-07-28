@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace com.iss.inventory
+{
+   public class MainController
+    {
+        public MainController()
+        {
+
+        }
+
+        public void LoginController(String username,String Passport)
+        {
+           
+        }
+    }
+}

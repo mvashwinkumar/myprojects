@@ -1,0 +1,77 @@
+{{#eq filter "true"}}
+
+
+<div class="row">
+    <span style="left:20px"><h4>Results for <i>"{{keyword}}"</i> filter. <label class="label label-danger" id="lblClearFilter" style="cursor:pointer;border-radius:10px;"><span class="glyphicon glyphicon-remove"></span> Clear Filter</label></h4>
+        <p>&nbsp;</p></span>
+</div>
+
+{{/eq}}
+
+{{#each this}}
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+    <!-----Start of listing--->
+    <div class="thumbnail col-xs-11 col-xs-offset-1">
+        <img src="{{imgPath}}" class="img img-thumbnail img-rounded" style='margin-top:10px'>
+        <div class="caption">
+            <h4>{{name}}</h4>
+            <div style='overflow:hidden;height:70px;padding-bottom:10px'>
+                <p class="lead paraDescription" style="font-size: 0.7em;" data-content="{{description}}" data-placement="auto right" data-toggle="popover" data-trigger="hover">
+                    {{shorten description}}
+                </p>
+            </div>
+            
+            <!------DISCOUNT------->
+            {{#hasDiscount discount}}
+            <div style="float:left">
+                
+                
+
+                <p style="padding:0px;margin:0px;"><label id="lblMainPrice" class="mainListPrice" data-price="{{price}}" data-discount="{{discount}}" style="font-size:0.7em">{{currency (finalPrice price discount)}} </label> | <b><label class="label label-warning" style="border-radius:8px;font-size:0.7em">{{discount}}%</label></b></p>
+                
+            </div>
+            {{else}}
+            <label style="float:left" id="lblMainPrice" class="mainListPrice" data-price="{{price}}" data-discount="{{discount}}" style="font-size:0.7em">{{currency price}}</label>
+            {{/hasDiscount}}
+            <!----END OF DISCOUNT------->
+            
+            <p style="float:right">
+                {{#inStock quantity}}
+                <input type="button" id='details_{{inventoryId}}' class="btn btn-info btn-sm numberInput" data-productId="{{inventoryId}}" style="font-size: 0.7em" value="More">                
+                {{else}}
+                <label class="label label-danger">Out Of Stock</label>
+                {{/inStock}}
+            </p>
+        </div>
+    </div>
+    <!-----End of Listing---->
+</div>
+{{/each}}
+
+<script type="text/javascript">
+    $(function() {
+        $(".inputNumber").focus(function(event) {
+
+            $(this).data("ex", $(this).val());
+        });
+        $(".inputNumber").blur(function(event) {
+
+            var str = $(this).val();
+
+            if (str == "")
+            {
+                $(this).val($(this).data("ex"));
+                console.log($(this).data("ex"));
+            }
+        });
+
+        $("#lblClearFilter").click(function() {
+            $("#searchInput").val("");
+            listProducts();
+        });
+        
+        //popovers
+        $(".paraDescription").popover({delay:{show:1000, hide:200}});
+
+    });
+</script>

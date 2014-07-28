@@ -1,0 +1,133 @@
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\com.iss.inventory.exe.config
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\com.iss.inventory.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\com.iss.inventory.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\AjaxControlToolkit.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\AjaxMin.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\HtmlAgilityPack.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\System.Spatial.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\HtmlAgilityPack.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\System.Spatial.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ar\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\cs\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\de\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\es\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\fr\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\he\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\hi\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\it\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ja\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ko\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\nl\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\pl\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\pt\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ru\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.Properties.Resources.resources
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\com.iss.inventory.exe.config
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\com.iss.inventory.exe
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\com.iss.inventory.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\AjaxControlToolkit.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\AjaxMin.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\HtmlAgilityPack.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.Data.Edm.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.Data.OData.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\System.Spatial.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\HtmlAgilityPack.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\HtmlAgilityPack.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.Data.Edm.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.Data.OData.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\System.Spatial.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ar\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\cs\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\de\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\es\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\fr\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\he\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\hi\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\it\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ja\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ko\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\nl\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\pl\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\pt\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ru\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\tr-TR\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-CHS\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-CHT\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\de\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\es\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\it\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\de\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\es\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\fr\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\it\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ja\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ko\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\ru\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hans\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\bin\Debug\zh-Hant\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.csprojResolveAssemblyReference.cache
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.Properties.Resources.resources
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.csproj.GenerateResource.Cache
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.exe
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\com.iss.inventory\obj\x86\Debug\com.iss.inventory.pdb

@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InvManagementModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="InvManagementModelStoreContainer">
+    <EntitySet Name="AdjVoucher" EntityType="InvManagementModel.Store.AdjVoucher" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdjVoucherDetails" EntityType="InvManagementModel.Store.AdjVoucherDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DelegateDetails" EntityType="InvManagementModel.Store.DelegateDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DeliveryOrder" EntityType="InvManagementModel.Store.DeliveryOrder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Department" EntityType="InvManagementModel.Store.Department" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee" EntityType="InvManagementModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PurchaseOrder" EntityType="InvManagementModel.Store.PurchaseOrder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PurchaseOrderDetails" EntityType="InvManagementModel.Store.PurchaseOrderDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RequestDetails" EntityType="InvManagementModel.Store.RequestDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RequestList" EntityType="InvManagementModel.Store.RequestList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SRF" EntityType="InvManagementModel.Store.SRF" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SRFDetails" EntityType="InvManagementModel.Store.SRFDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SRFRequestDetails" EntityType="InvManagementModel.Store.SRFRequestDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StationeryItems" EntityType="InvManagementModel.Store.StationeryItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplier" EntityType="InvManagementModel.Store.Supplier" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SupplierPriceList" EntityType="InvManagementModel.Store.SupplierPriceList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="InvManagementModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_DelegateDetails_Department" Association="InvManagementModel.Store.FK_DelegateDetails_Department">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="DelegateDetails" EntitySet="DelegateDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Department" Association="InvManagementModel.Store.FK_Employee_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvAdjustTransTable_InventoryAdjustment" Association="InvManagementModel.Store.FK_InvAdjustTransTable_InventoryAdjustment">
+      <End Role="AdjVoucher" EntitySet="AdjVoucher" />
+      <End Role="AdjVoucherDetails" EntitySet="AdjVoucherDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvAdjustTransTable_StationeryItems" Association="InvManagementModel.Store.FK_InvAdjustTransTable_StationeryItems">
+      <End Role="StationeryItems" EntitySet="StationeryItems" />
+      <End Role="AdjVoucherDetails" EntitySet="AdjVoucherDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventoryAdjustment_Employee" Association="InvManagementModel.Store.FK_InventoryAdjustment_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="AdjVoucher" EntitySet="AdjVoucher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestList_Employee1" Association="InvManagementModel.Store.FK_RequestList_Employee1">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="RequestList" EntitySet="RequestList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestListDetails_RequestList" Association="InvManagementModel.Store.FK_RequestListDetails_RequestList">
+      <End Role="RequestList" EntitySet="RequestList" />
+      <End Role="RequestDetails" EntitySet="RequestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestListDetails_StationeryItems" Association="InvManagementModel.Store.FK_RequestListDetails_StationeryItems">
+      <End Role="StationeryItems" EntitySet="StationeryItems" />
+      <End Role="RequestDetails" EntitySet="RequestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SRFDetails_Department" Association="InvManagementModel.Store.FK_SRFDetails_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="SRFDetails" EntitySet="SRFDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SRFList_Employee" Association="InvManagementModel.Store.FK_SRFList_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="SRF" EntitySet="SRF" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SRFRequestDetails_RequestDetails" Association="InvManagementModel.Store.FK_SRFRequestDetails_RequestDetails">
+      <End Role="RequestDetails" EntitySet="RequestDetails" />
+      <End Role="SRFRequestDetails" EntitySet="SRFRequestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SRFRequestDetails_SRFDetails" Association="InvManagementModel.Store.FK_SRFRequestDetails_SRFDetails">
+      <End Role="SRFDetails" EntitySet="SRFDetails" />
+      <End Role="SRFRequestDetails" EntitySet="SRFRequestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatPurchaseList_DeliveryOrder" Association="InvManagementModel.Store.FK_StatPurchaseList_DeliveryOrder">
+      <End Role="DeliveryOrder" EntitySet="DeliveryOrder" />
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatPurchaseList_Employee" Association="InvManagementModel.Store.FK_StatPurchaseList_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatPurchaseList_Supplier" Association="InvManagementModel.Store.FK_StatPurchaseList_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatPurchaseListDetails_StationeryItems" Association="InvManagementModel.Store.FK_StatPurchaseListDetails_StationeryItems">
+      <End Role="StationeryItems" EntitySet="StationeryItems" />
+      <End Role="PurchaseOrderDetails" EntitySet="PurchaseOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StatPurchaseListDetails_StatPurchaseList" Association="InvManagementModel.Store.FK_StatPurchaseListDetails_StatPurchaseList">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="PurchaseOrderDetails" EntitySet="PurchaseOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderList_StationeryItems" Association="InvManagementModel.Store.FK_TenderList_StationeryItems">
+      <End Role="StationeryItems" EntitySet="StationeryItems" />
+      <End Role="SupplierPriceList" EntitySet="SupplierPriceList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderList_Supplier" Association="InvManagementModel.Store.FK_TenderList_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="SupplierPriceList" EntitySet="SupplierPriceList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransTable_SRFList" Association="InvManagementModel.Store.FK_TransTable_SRFList">
+      <End Role="SRF" EntitySet="SRF" />
+      <End Role="SRFDetails" EntitySet="SRFDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransTable_StationeryItems" Association="InvManagementModel.Store.FK_TransTable_StationeryItems">
+      <End Role="StationeryItems" EntitySet="StationeryItems" />
+      <End Role="SRFDetails" EntitySet="SRFDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AdjVoucher">
+    <Key>
+      <PropertyRef Name="AdjustID" />
+    </Key>
+    <Property Name="AdjustID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ApprovalbyID" Type="int" />
+    <Property Name="VoucherID" Type="int" />
+    <Property Name="DateIssued" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="AdjVoucherDetails">
+    <Key>
+      <PropertyRef Name="AdjVoucherDetailsID" />
+    </Key>
+    <Property Name="AdjVoucherDetailsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdjustID" Type="int" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="QtyAdjust" Type="int" />
+    <Property Name="Reason" Type="nvarchar(max)" />
+    <Property Name="DateAdj" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="DelegateDetails">
+    <Key>
+      <PropertyRef Name="DelegateDetailsID" />
+    </Key>
+    <Property Name="DelegateDetailsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DelegateID" Type="int" />
+    <Property Name="DateFrom" Type="smalldatetime" />
+    <Property Name="DateTill" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="DeliveryOrder">
+    <Key>
+      <PropertyRef Name="DeliveryID" />
+    </Key>
+    <Property Name="DeliveryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseID" Type="int" />
+    <Property Name="SignedbyID" Type="int" />
+    <Property Name="SupplierBillNo" Type="int" />
+    <Property Name="DateDelivered" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DeptID" />
+    </Key>
+    <Property Name="DeptID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeptName" Type="nvarchar(max)" />
+    <Property Name="ContactName" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="int" />
+    <Property Name="Fax" Type="int" />
+    <Property Name="HeadID" Type="int" />
+    <Property Name="CollectionPoint" Type="nvarchar(max)" />
+    <Property Name="RepresentativeID" Type="int" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="DeptID" Type="int" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="int" />
+    <Property Name="Role" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="PurchaseOrder">
+    <Key>
+      <PropertyRef Name="PurchaseID" />
+    </Key>
+    <Property Name="PurchaseID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierID" Type="int" />
+    <Property Name="DeliveryOrderID" Type="int" />
+    <Property Name="OrderedbyID" Type="int" />
+    <Property Name="DateOrdered" Type="smalldatetime" />
+    <Property Name="DateRequired" Type="smalldatetime" />
+    <Property Name="Remarks" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="PurchaseOrderDetails">
+    <Key>
+      <PropertyRef Name="PurchaseListDetailsID" />
+    </Key>
+    <Property Name="PurchaseListDetailsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseID" Type="int" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Qty" Type="int" />
+    <Property Name="UnitPrice" Type="float" />
+  </EntityType>
+  <EntityType Name="RequestDetails">
+    <Key>
+      <PropertyRef Name="RequestDetailsID" />
+    </Key>
+    <Property Name="RequestDetailsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RequestID" Type="int" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="QtyRequested" Type="int" />
+    <Property Name="QtyDelivered" Type="int" />
+  </EntityType>
+  <EntityType Name="RequestList">
+    <Key>
+      <PropertyRef Name="RequestID" />
+    </Key>
+    <Property Name="RequestID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="ApprovedbyID" Type="int" />
+    <Property Name="DateSubmitted" Type="smalldatetime" />
+    <Property Name="DateReceived" Type="smalldatetime" />
+    <Property Name="SpecialRequest" Type="nvarchar(max)" />
+    <Property Name="Status" Type="nvarchar(max)" />
+    <Property Name="Remarks" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SRF">
+    <Key>
+      <PropertyRef Name="SRFID" />
+    </Key>
+    <Property Name="SRFID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RFDate" Type="smalldatetime" />
+    <Property Name="CreatedbyID" Type="int" />
+    <Property Name="StatusforForm" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SRFDetails">
+    <Key>
+      <PropertyRef Name="SRFDetailsID" />
+    </Key>
+    <Property Name="SRFDetailsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SRFID" Type="int" />
+    <Property Name="DeptID" Type="int" />
+    <Property Name="Status" Type="nvarchar(max)" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="QtyRequested" Type="int" />
+    <Property Name="QtyRetrieved" Type="int" />
+    <Property Name="CollectionPt" Type="nvarchar(max)" />
+    <Property Name="CollectionDateTime" Type="smalldatetime" />
+    <Property Name="RepresentativeID" Type="int" />
+  </EntityType>
+  <EntityType Name="SRFRequestDetails">
+    <Key>
+      <PropertyRef Name="SRFRequestDetailsID" />
+    </Key>
+    <Property Name="SRFRequestDetailsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SRFDetailsID" Type="int" />
+    <Property Name="RequestDetailsID" Type="int" />
+  </EntityType>
+  <EntityType Name="StationeryItems">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="QtyLeft" Type="int" />
+    <Property Name="ReorderLevel" Type="int" />
+    <Property Name="ReorderQty" Type="int" />
+    <Property Name="UnitofMeasure" Type="nvarchar(max)" />
+    <Property Name="Location" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="ContactPersonName" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="int" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Fax" Type="int" />
+    <Property Name="Email" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SupplierPriceList">
+    <Key>
+      <PropertyRef Name="SupplierPriceID" />
+    </Key>
+    <Property Name="SupplierPriceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierID" Type="int" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="SupplierPrice" Type="float" />
+    <Property Name="Year" Type="smalldatetime" />
+    <Property Name="SupplierCategory" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_DelegateDetails_Department">
+    <End Role="Employee" Type="InvManagementModel.Store.Employee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DelegateDetails" Type="InvManagementModel.Store.DelegateDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="DelegateDetails">
+        <PropertyRef Name="DelegateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Department">
+    <End Role="Department" Type="InvManagementModel.Store.Department" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Employee" Type="InvManagementModel.Store.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DeptID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvAdjustTransTable_InventoryAdjustment">
+    <End Role="AdjVoucher" Type="InvManagementModel.Store.AdjVoucher" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdjVoucherDetails" Type="InvManagementModel.Store.AdjVoucherDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdjVoucher">
+        <PropertyRef Name="AdjustID" />
+      </Principal>
+      <Dependent Role="AdjVoucherDetails">
+        <PropertyRef Name="AdjustID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvAdjustTransTable_StationeryItems">
+    <End Role="StationeryItems" Type="InvManagementModel.Store.StationeryItems" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdjVoucherDetails" Type="InvManagementModel.Store.AdjVoucherDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StationeryItems">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="AdjVoucherDetails">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventoryAdjustment_Employee">
+    <End Role="Employee" Type="InvManagementModel.Store.Employee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdjVoucher" Type="InvManagementModel.Store.AdjVoucher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="AdjVoucher">
+        <PropertyRef Name="ApprovalbyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestList_Employee1">
+    <End Role="Employee" Type="InvManagementModel.Store.Employee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RequestList" Type="InvManagementModel.Store.RequestList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="RequestList">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestListDetails_RequestList">
+    <End Role="RequestList" Type="InvManagementModel.Store.RequestList" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RequestDetails" Type="InvManagementModel.Store.RequestDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RequestList">
+        <PropertyRef Name="RequestID" />
+      </Principal>
+      <Dependent Role="RequestDetails">
+        <PropertyRef Name="RequestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestListDetails_StationeryItems">
+    <End Role="StationeryItems" Type="InvManagementModel.Store.StationeryItems" Multiplicity="0..1" />
+    <End Role="RequestDetails" Type="InvManagementModel.Store.RequestDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StationeryItems">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="RequestDetails">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SRFDetails_Department">
+    <End Role="Department" Type="InvManagementModel.Store.Department" Multiplicity="0..1" />
+    <End Role="SRFDetails" Type="InvManagementModel.Store.SRFDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DeptID" />
+      </Principal>
+      <Dependent Role="SRFDetails">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SRFList_Employee">
+    <End Role="Employee" Type="InvManagementModel.Store.Employee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SRF" Type="InvManagementModel.Store.SRF" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="SRF">
+        <PropertyRef Name="CreatedbyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SRFRequestDetails_RequestDetails">
+    <End Role="RequestDetails" Type="InvManagementModel.Store.RequestDetails" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SRFRequestDetails" Type="InvManagementModel.Store.SRFRequestDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RequestDetails">
+        <PropertyRef Name="RequestDetailsID" />
+      </Principal>
+      <Dependent Role="SRFRequestDetails">
+        <PropertyRef Name="RequestDetailsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SRFRequestDetails_SRFDetails">
+    <End Role="SRFDetails" Type="InvManagementModel.Store.SRFDetails" Multiplicity="0..1" />
+    <End Role="SRFRequestDetails" Type="InvManagementModel.Store.SRFRequestDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SRFDetails">
+        <PropertyRef Name="SRFDetailsID" />
+      </Principal>
+      <Dependent Role="SRFRequestDetails">
+        <PropertyRef Name="SRFDetailsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatPurchaseList_DeliveryOrder">
+    <End Role="DeliveryOrder" Type="InvManagementModel.Store.DeliveryOrder" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PurchaseOrder" Type="InvManagementModel.Store.PurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DeliveryOrder">
+        <PropertyRef Name="DeliveryID" />
+      </Principal>
+      <Dependent Role="PurchaseOrder">
+        <PropertyRef Name="DeliveryOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatPurchaseList_Employee">
+    <End Role="Employee" Type="InvManagementModel.Store.Employee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PurchaseOrder" Type="InvManagementModel.Store.PurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="PurchaseOrder">
+        <PropertyRef Name="OrderedbyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatPurchaseList_Supplier">
+    <End Role="Supplier" Type="InvManagementModel.Store.Supplier" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PurchaseOrder" Type="InvManagementModel.Store.PurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="PurchaseOrder">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatPurchaseListDetails_StationeryItems">
+    <End Role="StationeryItems" Type="InvManagementModel.Store.StationeryItems" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PurchaseOrderDetails" Type="InvManagementModel.Store.PurchaseOrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StationeryItems">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderDetails">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StatPurchaseListDetails_StatPurchaseList">
+    <End Role="PurchaseOrder" Type="InvManagementModel.Store.PurchaseOrder" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PurchaseOrderDetails" Type="InvManagementModel.Store.PurchaseOrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrder">
+        <PropertyRef Name="PurchaseID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderDetails">
+        <PropertyRef Name="PurchaseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderList_StationeryItems">
+    <End Role="StationeryItems" Type="InvManagementModel.Store.StationeryItems" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SupplierPriceList" Type="InvManagementModel.Store.SupplierPriceList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StationeryItems">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="SupplierPriceList">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderList_Supplier">
+    <End Role="Supplier" Type="InvManagementModel.Store.Supplier" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SupplierPriceList" Type="InvManagementModel.Store.SupplierPriceList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="SupplierPriceList">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransTable_SRFList">
+    <End Role="SRF" Type="InvManagementModel.Store.SRF" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SRFDetails" Type="InvManagementModel.Store.SRFDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SRF">
+        <PropertyRef Name="SRFID" />
+      </Principal>
+      <Dependent Role="SRFDetails">
+        <PropertyRef Name="SRFID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransTable_StationeryItems">
+    <End Role="StationeryItems" Type="InvManagementModel.Store.StationeryItems" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SRFDetails" Type="InvManagementModel.Store.SRFDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StationeryItems">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="SRFDetails">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

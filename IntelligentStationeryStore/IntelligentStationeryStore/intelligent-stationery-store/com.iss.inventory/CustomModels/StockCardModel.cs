@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using com.iss.inventory.Entity;
+
+namespace com.iss.inventory.CustomModels
+{
+    public class StockCardModel
+    {
+        List<StockCardDetailsModel> stockCardDetails;
+        StationeryItem item;
+        int month;
+        int year;
+
+        public int getMonth() {
+            return month;
+        }
+
+        public void setMonth(int mon)
+        {
+            this.month = mon;
+        }
+
+        public int getYear() {
+            return year;
+        }
+
+        public void setYear(int yr) {
+            this.year = yr;
+        }
+
+        public StationeryItem getItem()
+        {
+            return item;
+        }
+
+        public void setItem(StationeryItem staItem)
+        {
+            item = staItem;
+        }
+
+        public List<StockCardDetailsModel> getStockCardDetails()
+        {
+            return stockCardDetails;
+        }
+
+        public void setStockCardDetails(List<StockCardDetailsModel> stockCardDetails)
+        {
+            this.stockCardDetails = stockCardDetails;
+        }
+    }
+}

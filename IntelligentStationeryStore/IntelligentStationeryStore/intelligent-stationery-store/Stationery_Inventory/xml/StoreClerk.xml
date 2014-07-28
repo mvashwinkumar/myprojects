@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Home>
+  <Menu text="Personal Information" url=""/>
+  <Menu text="Supplier Details" url=""/>
+  <Menu text="Search Items" url=""/>
+  <Menu text="Store" url="">
+    <SubMenu text="Inventory Adjustment Voucher" url="">
+      <SubMenu text="Add new item" url=""/>
+      <SubMenu text="Voucher Details list" url=""/>
+    </SubMenu>
+    <SubMenu text="Stationery Purchase Order" url="">
+      <SubMenu text="Create new PO" url=""/>
+      <SubMenu text="PO History" url=""/>
+    </SubMenu>
+    <SubMenu text="Delivery Order Information" url="">
+      <SubMenu text="Input DO Details" url=""/>
+      <SubMenu text="View Details list" url=""/>
+    </SubMenu>
+    <SubMenu text="Stationery Retrieval Form" url="">
+      <SubMenu text="Create new SRF" url=""/>
+      <SubMenu text="SRF History" url=""/>
+    </SubMenu>
+    <SubMenu text="Inventory" url="">
+      <SubMenu text="Stock Card Details" url=""/>
+      <SubMenu text="Inventory Status Report" url=""/>
+    </SubMenu>
+    <SubMenu text="Reorder History Report" url=""/>
+  </Menu>
+</Home>

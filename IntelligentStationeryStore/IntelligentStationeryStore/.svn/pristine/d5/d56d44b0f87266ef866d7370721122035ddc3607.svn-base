@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using com.iss.inventory;
+
+namespace Staionery_Inventory
+{
+    public partial class login : System.Web.UI.Page
+    {
+        MainController mc;
+        
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            mc = new MainController();
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            String username=txtName.Text.ToString();
+            String password=txtPass.Text.ToString();
+           
+            String res= mc.LoginController(username, password);
+            if (res == "UserName and password are incorrected")
+            {
+                lblLoginInfo.Text = res;
+                txtName.Text = "";
+            }
+            else
+            {
+              
+                Response.Redirect("~/Presentation/StationeryRequest/StationeryRequisitionForm.aspx?name="+this.txtName.Text);
+
+            }
+                       
+        }
+
+      
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Test_TypeAhead</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <script src="scripts/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="scripts/handlebars-v1.3.0.js" type="text/javascript"></script>
+        <script src="scripts/typeahead.bundle.js"></script>
+        
+        <script>
+            var engine = new Bloodhound({
+                datumTokenizer: function(d){return d.tokens;},
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                remote: "/searchProducts?query=%QUERY"
+            });
+
+            var promise = engine.initialize();
+            promise
+            .done(function() { 
+            alert('initialised');
+            $('.typeahead').typeahead({
+                minLength: 3,
+                highlight: true,
+            },
+            {
+                name: 'mydataset',
+                source: engine.ttAdapter(),
+                displayKey: 'productName'
+            });
+            
+            })
+            .fail(function() { alert('err!'); });
+            
+            
+        </script>
+        
+    </head>
+    <body>
+        <input type="text" class="typeahead tt-input">
+        
+<!--        <span class="tt-dropdown-menu">
+             <div class="tt-dataset-mydataset">
+            </div>
+        </span>-->
+           
+    </body>
+</html>

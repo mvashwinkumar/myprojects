@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Staionery_Inventory.master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="../js/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <link rel="Stylesheet"  type="text/css" href="~/bootstrap/css/bootstrap.min.css" media="screen" />
+</head>
+<body>
+    <form class="form-horizontal" id="form1" runat="server">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <asp:Image ID="imgLogo" runat="server" ImageUrl="~/image/iss.jpg" CssClass="img-responsive" />
+     </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-10">
+  <asp:SiteMapPath ID="SiteMapPath1" runat="server" >
+        </asp:SiteMapPath>
+     </div>
+    <div class="col-sm-1"><asp:Label  ID="lblLogInName" CssClass="text-info" runat="server" Text="User" ></asp:Label></div>
+    <div class="col-sm-1" ><a href class="text-info" id="logout"  >Log out</a></div>
+    </div>
+    <div class="row">
+    <div class=" col-md-4">
+    <asp:TreeView ID="treeview1" runat="server" CssClass="nav"  DataSourceID="xdstreeview">
+    <DataBindings>
+               <asp:TreeNodeBinding DataMember="Menu" TextField="text" />
+               <asp:TreeNodeBinding DataMember="SubMenu" TextField="text" />
+           </DataBindings>
+    </asp:TreeView>
+    <asp:XmlDataSource ID="xdstreeview" runat="server" 
+            DataFile="~/xml/StoreClerk.xml"></asp:XmlDataSource>
+             <asp:HiddenField ID="hfconfirm" runat="server" ClientIDMode="Static" />
+    </div>
+    <div class="col-md-8 container">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+         </div>
+        </div>
+        </div>
+       </form>
+       <script  type="text/javascript">
+           function Confrim() {
+               var result= confirm('Are you sure  you want to submit ? : Press OK to continue.');
+               if (result == true)
+                   document.getElementById('<%=hfconfirm.ClientID %>').value = "true";
+               else
+                   document.getElementById('<%=hfconfirm.ClientID %>').value = "false";
+           } 
+</script>
+</body>
+</html>

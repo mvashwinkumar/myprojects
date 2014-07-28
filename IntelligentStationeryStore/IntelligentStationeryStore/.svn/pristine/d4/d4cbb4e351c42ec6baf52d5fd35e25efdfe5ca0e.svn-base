@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace com.iss.inventory.CustomModels
+{
+    public class StockCardDetailsModel
+    {
+        DateTime date;
+        String category;
+        String name;
+        int quantity;
+
+    }
+}

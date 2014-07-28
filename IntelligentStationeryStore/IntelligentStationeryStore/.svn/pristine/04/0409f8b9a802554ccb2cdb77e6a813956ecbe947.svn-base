@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using com.iss.inventory.Controllers;
+
+namespace com.iss.inventory
+{
+   public class MainController
+    {
+       LoginController lc;
+        public MainController()
+        {
+            lc = new LoginController();
+        }
+
+        public String LoginController(String username,String password)
+        {
+            string res = lc.Login(username, password);
+            if (res.Length>10)
+            {
+                 return res;
+            }
+            else
+                return res;
+        }
+    }
+}

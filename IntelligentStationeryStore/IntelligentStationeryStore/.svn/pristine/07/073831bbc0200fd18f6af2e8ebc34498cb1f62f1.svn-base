@@ -1,0 +1,54 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Presentation/master.Master" AutoEventWireup="true" CodeBehind="StockCard.aspx.cs" Inherits="Staionery_Inventory.Presentation.StockCard.StockCard" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br />
+<div class="row">
+<div class="col-md-3">
+<asp:Label ID="lblSearchItemId" runat="server" CssClass="text-info" Text="Item Code:" />
+</div>
+<div class="col-md-3">
+<asp:TextBox ID="txtSearchItemId" runat="server" CssClass="form-control text-left" 
+        EnableViewState="False" />
+</div>
+<div class="col-md-2">
+    <asp:Button ID="btnSearchItemId" runat="server" Text="Get Item" 
+        CssClass="btn btn-default" onclick="btnSearchItemId_Click" />
+</div>
+<div class="col-md-2">
+    <asp:Button ID="btnToSearchPage" runat="server" Text="Search Page" 
+        CssClass="btn btn-primary" onclick="btnToSearchPage_Click" />
+</div>
+</div>
+<br />
+<div class="row">
+<div class="col-md-3">
+<asp:Label ID="lblItemDescription" runat="server" CssClass="text-info" Text="Item Name:" />
+</div>
+<div class="col-md-3">
+<asp:Label ID="lblItemDescriptionValue" runat="server" CssClass="text-info" Text="" />
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<asp:Label ID="lblItemUnitOfMeasure" runat="server" CssClass="text-info" Text="UOM:" />
+</div>
+<div class="col-md-3">
+<asp:Label ID="lblItemUnitOfMeasureValue" runat="server" CssClass="text-info" Text="" />
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<asp:Label ID="lblItemSupplier" runat="server" CssClass="text-info" Text="Main Supplier:" />
+</div>
+<div class="col-md-3">
+<asp:Label ID="lblItemSupplierValue" runat="server" CssClass="text-info" Text="" />
+</div>
+</div>
+<br />
+<div class="row">
+    <asp:GridView ID="gvItemStockDetails" runat="server" 
+    CssClass="col-sm-12 table table-striped table-bordered table-hover">
+    </asp:GridView>
+</div>
+</asp:Content>

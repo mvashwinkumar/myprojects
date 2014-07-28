@@ -1,0 +1,113 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+
+namespace Staionery_Inventory
+{
+    public partial class StationeryRequisitionForm : System.Web.UI.Page
+    {
+        List<dummestaioneryData> lisdel = new List<dummestaioneryData>();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+                     List<dummestaioneryData> lis = new List<dummestaioneryData>();
+                dummestaioneryData sh = new dummestaioneryData("C001", "Clip Double 1", 32, "Dozen");
+                dummestaioneryData sh2 = new dummestaioneryData("C002", "Clip Double 2", 32, "Dozen");
+                dummestaioneryData sh3 = new dummestaioneryData("C003", "Clip Double 3/4", 32, "Dozen");
+
+                lis.Add(sh);
+                lis.Add(sh2);
+                lis.Add(sh3);
+                gvStationeryRequisition.DataSource = lis;
+                gvStationeryRequisition.DataBind();
+                
+             lisdel =(List<dummestaioneryData>)gvStationeryRequisition.DataSource;
+       
+            }
+
+        protected void gvStationeryRequisition_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            lisdel.RemoveAt(e.RowIndex);
+           // dt.Rows.RemoveAt(e.RowIndex);
+            gvStationeryRequisition.DataSource = lisdel;
+            gvStationeryRequisition.DataBind();
+ 
+        }
+
+        protected void btnsubmit_Click(object sender, EventArgs e)
+        {
+
+            HiddenField hf = this.Master.FindControl("hfconfirm") as HiddenField;
+            if (hf.Value=="true")
+            {
+                //call maincontroller and do the other work
+            }
+            
+            
+        }
+
+      
+    }
+
+    public class dummestaioneryData
+    {
+        String cata1;
+
+        public String Cata1
+        {
+            get { return cata1; }
+            set { cata1 = value; }
+        }
+        int quan1;
+
+        public int Quan1
+        {
+            get { return quan1; }
+            set { quan1 = value; }
+        }
+        String des1;
+
+        public String Des1
+        {
+            get { return des1; }
+            set { des1 = value; }
+        }
+        int rquan;
+        string umeasure;
+
+        public string Umeasure
+        {
+            get { return umeasure; }
+            set { umeasure = value; }
+        }
+
+        public int Rquan
+        {
+            get { return rquan; }
+            set { rquan = value; }
+        }
+
+        public dummestaioneryData(String cata, String Des, int quna, string umeasure)
+        {
+            this.cata1 = cata;
+            this.quan1 = quna;
+            this.des1 = Des;
+            this.umeasure = umeasure;
+        }
+
+        public dummestaioneryData(String cata, String Des, int quna, int rquan, string umeasure)
+        {
+            this.cata1 = cata;
+            this.quan1 = quna;
+            this.des1 = Des;
+            this.rquan = rquan;
+            this.umeasure = umeasure;
+        }
+
+
+    }
+}

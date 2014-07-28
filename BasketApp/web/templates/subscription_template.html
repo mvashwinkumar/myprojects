@@ -1,0 +1,12 @@
+<div class="list-group">    
+{{#each this}}
+<a class="list-group-item subscription {{#hasDiscount discount}}discount{{/hasDiscount}}" data-productid="{{productId}}">
+    {{#hasDiscount discount}}<span class="glyphicon glyphicon-fire"></span>{{/hasDiscount}}
+    {{name}} &nbsp; 
+    <span class="glyphicon glyphicon-minus-sign btn-nav subscriptionRemove" data-productid="{{productId}}" data-toggle="tooltip" title="Remove subscription for {{name}}"></span>
+</a>
+{{/each}} 
+</div>
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip({'placement': 'right'});
+</script>

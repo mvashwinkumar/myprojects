@@ -1,0 +1,51 @@
+﻿{{#each this}}
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse_{{DepID}}">{{DepName}}
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse_{{DepID}}" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="bs-component">
+                                <table class="table table-striped table-hover" id="disbList_{{DepDisID}}">
+                                    <thead>
+                                        <tr>
+                                            <th>Item ID</th>
+                                            <th>Item Description</th>
+                                            <th>Quant Required</th>
+                                            <th>Quantity to be Delivered </th>
+                                            <th>Quantity in Inventorry</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {{#each this.DepDisbItems}}
+                                        <tr class="rowdata">
+                                            <td class="itemid">{{DisbItemID}}</td>
+                                            <td>{{ItemDescription}}</td>
+                                            <td class="reqquant">{{DisbItemQuantReq}}</td>
+                                            <td>
+                                                <input type="number" value="{{DisbItemQuantDelivered}}" class="txt_Number" /></td>
+                                            <td>{{ItemQuant}}
+                                            </td>
+
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button type="button" class="btn-sm btn-success" id="btn_ViewCP_{{DepID}}" data-cpid="{{DepID}}">View Collection Point Details</button>
+                <button type="button" class="btn-sm btn-success col-sm-offset-7" id="btn_Confirm_{{DepDisID}}" data-depdibid="{{DepDisID}}">Confirm Quantity</button>
+            </div>
+        </div>
+{{/each}}

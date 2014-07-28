@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DafestyModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DafestyModelStoreContainer">
+    <EntitySet Name="IssueTran" EntityType="DafestyModel.Store.IssueTran" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Movies" EntityType="DafestyModel.Store.Movies" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_IssueTran_Movies1" Association="DafestyModel.Store.FK_IssueTran_Movies1">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="IssueTran" EntitySet="IssueTran" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="IssueTran">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="nvarchar" MaxLength="4" />
+    <Property Name="VideoCode" Type="smallint" />
+    <Property Name="DateIssue" Type="datetime" />
+    <Property Name="DateDue" Type="datetime" />
+    <Property Name="DateActualReturn" Type="datetime" />
+    <Property Name="RentalStatus" Type="nvarchar" MaxLength="3" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Movies">
+    <Key>
+      <PropertyRef Name="VideoCode" />
+    </Key>
+    <Property Name="VideoCode" Type="smallint" Nullable="false" />
+    <Property Name="MovieTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="MovieType" Type="nvarchar" MaxLength="10" />
+    <Property Name="Rating" Type="nvarchar" MaxLength="3" />
+    <Property Name="RentalPrice" Type="real" />
+    <Property Name="Producer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Director" Type="nvarchar" MaxLength="50" />
+    <Property Name="Media" Type="nvarchar" MaxLength="50" />
+    <Property Name="TotalStock" Type="smallint" />
+    <Property Name="NumberRented" Type="smallint" />
+  </EntityType>
+  <Association Name="FK_IssueTran_Movies1">
+    <End Role="Movies" Type="DafestyModel.Store.Movies" Multiplicity="0..1" />
+    <End Role="IssueTran" Type="DafestyModel.Store.IssueTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="VideoCode" />
+      </Principal>
+      <Dependent Role="IssueTran">
+        <PropertyRef Name="VideoCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LibraryModelStoreContainer">
+    <EntitySet Name="Books" EntityType="LibraryModel.Store.Books" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Members" EntityType="LibraryModel.Store.Members" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Staff" EntityType="LibraryModel.Store.Staff" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Transactions" EntityType="LibraryModel.Store.Transactions" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Tran_Books" Association="LibraryModel.Store.FK_Tran_Books">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tran_Members" Association="LibraryModel.Store.FK_Tran_Members">
+      <End Role="Members" EntitySet="Members" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Books">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="smallint" Nullable="false" />
+    <Property Name="BookName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Author" Type="nvarchar" MaxLength="50" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="50" />
+    <Property Name="Category" Type="nvarchar" MaxLength="10" />
+    <Property Name="TotalStock" Type="smallint" />
+    <Property Name="NumberLended" Type="smallint" />
+    <Property Name="Location" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Members">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="MemberName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PhoneNumber" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Country" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="StaffID" />
+    </Key>
+    <Property Name="StaffID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="StaffName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="StaffPassword" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Transactions">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="BookID" Type="smallint" Nullable="false" />
+    <Property Name="MemberID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="IssueDate" Type="datetime" Nullable="false" />
+    <Property Name="DueDate" Type="datetime" Nullable="false" />
+    <Property Name="ReturnDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Tran_Books">
+    <End Role="Books" Type="LibraryModel.Store.Books" Multiplicity="1" />
+    <End Role="Transactions" Type="LibraryModel.Store.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tran_Members">
+    <End Role="Members" Type="LibraryModel.Store.Members" Multiplicity="1" />
+    <End Role="Transactions" Type="LibraryModel.Store.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Members">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

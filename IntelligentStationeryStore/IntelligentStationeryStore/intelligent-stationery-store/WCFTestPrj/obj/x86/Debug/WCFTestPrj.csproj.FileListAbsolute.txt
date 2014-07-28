@@ -1,0 +1,5 @@
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\WCFTestPrj\bin\Debug\WCFTestPrj.exe.config
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\WCFTestPrj\bin\Debug\WCFTestPrj.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\WCFTestPrj\bin\Debug\WCFTestPrj.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\WCFTestPrj\obj\x86\Debug\WCFTestPrj.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\WCFTestPrj\obj\x86\Debug\WCFTestPrj.pdb

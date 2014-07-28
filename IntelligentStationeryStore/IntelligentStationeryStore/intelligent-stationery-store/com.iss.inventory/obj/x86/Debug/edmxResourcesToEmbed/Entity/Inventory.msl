@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InvManagementModelStoreContainer" CdmEntityContainer="InvManagementEntities">
+    <EntitySetMapping Name="AdjVouchers">
+      <EntityTypeMapping TypeName="InvManagementModel.AdjVoucher">
+        <MappingFragment StoreEntitySet="AdjVoucher">
+          <ScalarProperty Name="AdjustID" ColumnName="AdjustID" />
+          <ScalarProperty Name="ApprovalbyID" ColumnName="ApprovalbyID" />
+          <ScalarProperty Name="VoucherID" ColumnName="VoucherID" />
+          <ScalarProperty Name="DateIssued" ColumnName="DateIssued" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdjVoucherDetails">
+      <EntityTypeMapping TypeName="InvManagementModel.AdjVoucherDetail">
+        <MappingFragment StoreEntitySet="AdjVoucherDetails">
+          <ScalarProperty Name="AdjVoucherDetailsID" ColumnName="AdjVoucherDetailsID" />
+          <ScalarProperty Name="AdjustID" ColumnName="AdjustID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="QtyAdjust" ColumnName="QtyAdjust" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="DateAdj" ColumnName="DateAdj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DelegateDetails">
+      <EntityTypeMapping TypeName="InvManagementModel.DelegateDetail">
+        <MappingFragment StoreEntitySet="DelegateDetails">
+          <ScalarProperty Name="DelegateDetailsID" ColumnName="DelegateDetailsID" />
+          <ScalarProperty Name="DelegateID" ColumnName="DelegateID" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="DateTill" ColumnName="DateTill" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryOrders">
+      <EntityTypeMapping TypeName="InvManagementModel.DeliveryOrder">
+        <MappingFragment StoreEntitySet="DeliveryOrder">
+          <ScalarProperty Name="DeliveryID" ColumnName="DeliveryID" />
+          <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+          <ScalarProperty Name="SignedbyID" ColumnName="SignedbyID" />
+          <ScalarProperty Name="SupplierBillNo" ColumnName="SupplierBillNo" />
+          <ScalarProperty Name="DateDelivered" ColumnName="DateDelivered" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="InvManagementModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="HeadID" ColumnName="HeadID" />
+          <ScalarProperty Name="CollectionPoint" ColumnName="CollectionPoint" />
+          <ScalarProperty Name="RepresentativeID" ColumnName="RepresentativeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="InvManagementModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrders">
+      <EntityTypeMapping TypeName="InvManagementModel.PurchaseOrder">
+        <MappingFragment StoreEntitySet="PurchaseOrder">
+          <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="DeliveryOrderID" ColumnName="DeliveryOrderID" />
+          <ScalarProperty Name="OrderedbyID" ColumnName="OrderedbyID" />
+          <ScalarProperty Name="DateOrdered" ColumnName="DateOrdered" />
+          <ScalarProperty Name="DateRequired" ColumnName="DateRequired" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrderDetails">
+      <EntityTypeMapping TypeName="InvManagementModel.PurchaseOrderDetail">
+        <MappingFragment StoreEntitySet="PurchaseOrderDetails">
+          <ScalarProperty Name="PurchaseListDetailsID" ColumnName="PurchaseListDetailsID" />
+          <ScalarProperty Name="PurchaseID" ColumnName="PurchaseID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequestDetails">
+      <EntityTypeMapping TypeName="InvManagementModel.RequestDetail">
+        <MappingFragment StoreEntitySet="RequestDetails">
+          <ScalarProperty Name="RequestDetailsID" ColumnName="RequestDetailsID" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="QtyRequested" ColumnName="QtyRequested" />
+          <ScalarProperty Name="QtyDelivered" ColumnName="QtyDelivered" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequestLists">
+      <EntityTypeMapping TypeName="InvManagementModel.RequestList">
+        <MappingFragment StoreEntitySet="RequestList">
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ApprovedbyID" ColumnName="ApprovedbyID" />
+          <ScalarProperty Name="DateSubmitted" ColumnName="DateSubmitted" />
+          <ScalarProperty Name="DateReceived" ColumnName="DateReceived" />
+          <ScalarProperty Name="SpecialRequest" ColumnName="SpecialRequest" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SRFs">
+      <EntityTypeMapping TypeName="InvManagementModel.SRF">
+        <MappingFragment StoreEntitySet="SRF">
+          <ScalarProperty Name="SRFID" ColumnName="SRFID" />
+          <ScalarProperty Name="RFDate" ColumnName="RFDate" />
+          <ScalarProperty Name="CreatedbyID" ColumnName="CreatedbyID" />
+          <ScalarProperty Name="StatusforForm" ColumnName="StatusforForm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SRFDetails">
+      <EntityTypeMapping TypeName="InvManagementModel.SRFDetail">
+        <MappingFragment StoreEntitySet="SRFDetails">
+          <ScalarProperty Name="SRFDetailsID" ColumnName="SRFDetailsID" />
+          <ScalarProperty Name="SRFID" ColumnName="SRFID" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="QtyRequested" ColumnName="QtyRequested" />
+          <ScalarProperty Name="QtyRetrieved" ColumnName="QtyRetrieved" />
+          <ScalarProperty Name="CollectionPt" ColumnName="CollectionPt" />
+          <ScalarProperty Name="CollectionDateTime" ColumnName="CollectionDateTime" />
+          <ScalarProperty Name="RepresentativeID" ColumnName="RepresentativeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SRFRequestDetails">
+      <EntityTypeMapping TypeName="InvManagementModel.SRFRequestDetail">
+        <MappingFragment StoreEntitySet="SRFRequestDetails">
+          <ScalarProperty Name="SRFRequestDetailsID" ColumnName="SRFRequestDetailsID" />
+          <ScalarProperty Name="SRFDetailsID" ColumnName="SRFDetailsID" />
+          <ScalarProperty Name="RequestDetailsID" ColumnName="RequestDetailsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StationeryItems">
+      <EntityTypeMapping TypeName="InvManagementModel.StationeryItem">
+        <MappingFragment StoreEntitySet="StationeryItems">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="QtyLeft" ColumnName="QtyLeft" />
+          <ScalarProperty Name="ReorderLevel" ColumnName="ReorderLevel" />
+          <ScalarProperty Name="ReorderQty" ColumnName="ReorderQty" />
+          <ScalarProperty Name="UnitofMeasure" ColumnName="UnitofMeasure" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="InvManagementModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ContactPersonName" ColumnName="ContactPersonName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplierPriceLists">
+      <EntityTypeMapping TypeName="InvManagementModel.SupplierPriceList">
+        <MappingFragment StoreEntitySet="SupplierPriceList">
+          <ScalarProperty Name="SupplierPriceID" ColumnName="SupplierPriceID" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="SupplierPrice" ColumnName="SupplierPrice" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="SupplierCategory" ColumnName="SupplierCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="InvManagementModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

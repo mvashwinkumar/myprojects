@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using com.iss.inventory.Entity;
+
+namespace com.iss.inventory.Controllers
+{
+    class LoginController
+    {
+        private InvManagementEntities invManEn;
+        private Employee emp;
+        private Department dep;
+
+         public LoginController()
+        {
+            invManEn = new InvManagementEntities();
+        }
+
+        public int Login(String username,String password)
+        {
+  
+           emp= (from e in invManEn.Employees where e.Name == username && e.Password == password select e).FirstOrDefault<Employee>();
+           if (emp.EmployeeID!=null)
+               return emp.EmployeeID;
+           else
+                return 0;
+        }
+
+        public String getRole(int EmployeeID )
+        {
+            return "role";
+        }
+        public int getDepID(int EmployeeID)
+        {
+            return 0;
+        }
+    }
+}

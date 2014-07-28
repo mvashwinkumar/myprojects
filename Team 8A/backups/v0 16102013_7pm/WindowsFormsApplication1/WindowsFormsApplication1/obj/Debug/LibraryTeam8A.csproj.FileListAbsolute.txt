@@ -1,0 +1,27 @@
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\EntityFramework.dll
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\EntityFramework.xml
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\LibraryTeam8A.csprojResolveAssemblyReference.cache
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form_Transactions.resources
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form_Login.resources
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\LibraryTeam8A.csproj.GenerateResource.Cache
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Team 8A\.net CA\huang xin\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SearchBooks.resources
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\EntityFramework.dll
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\EntityFramework.xml
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\LibraryTeam8A.csprojResolveAssemblyReference.cache
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SearchBooks.resources
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form_Transactions.resources
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form_Login.resources
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\LibraryTeam8A.csproj.GenerateResource.Cache
+D:\Team 8A\backups\v0 16102013_7pm\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources

@@ -1,0 +1,10 @@
+D:\Iss\Test_for_Project\bin\Debug\Test_for_Project.exe.config
+D:\Iss\Test_for_Project\bin\Debug\Test_for_Project.exe
+D:\Iss\Test_for_Project\bin\Debug\Test_for_Project.pdb
+D:\Iss\Test_for_Project\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Iss\Test_for_Project\obj\x86\Debug\Test_for_Project.Frm_Search.resources
+D:\Iss\Test_for_Project\obj\x86\Debug\Test_for_Project.Properties.Resources.resources
+D:\Iss\Test_for_Project\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Iss\Test_for_Project\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Iss\Test_for_Project\obj\x86\Debug\Test_for_Project.exe
+D:\Iss\Test_for_Project\obj\x86\Debug\Test_for_Project.pdb

@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace com.iss.inventory.CustomModels
+{
+   public class RequestListModel
+    {
+        private int employeeID;
+        private int approveID;
+        private DateTime dateSubmittion;
+        private DateTime dateReceieve;
+        private string specialRequest;
+        private string status;
+         private string remark;
+        private List<RequestListDetailModel> requestlistDetail;
+                
+        public int EmployeeID
+        {
+            get { return employeeID; }
+            set { employeeID = value; }
+        }
+
+        public int ApproveID
+        {
+            get { return approveID; }
+            set { approveID = value; }
+        }
+
+        public DateTime DateReceieve
+        {
+            get { return dateReceieve; }
+            set { dateReceieve = value; }
+        }
+
+        public DateTime DateSubmittion
+        {
+            get { return dateSubmittion; }
+            set { dateSubmittion = value; }
+        }
+        
+         public string SpecialRequest
+        {
+            get { return specialRequest; }
+            set { specialRequest = value; }
+         }
+
+
+         public string Status
+         {
+             get { return status; }
+             set { status = value; }
+         }
+       
+
+        public string Remark
+        {
+            get { return remark; }
+            set { remark = value; }
+        }
+
+        public List<RequestListDetailModel> RequestlistDetail
+        {
+            get { return requestlistDetail; }
+            set { requestlistDetail = value; }
+        }
+
+
+        }
+
+    public class RequestListDetailModel
+    {
+        public RequestListDetailModel()
+        {
+        }
+
+        private int requestListID;
+        private int itemID;
+        private int qtyRequest;
+        private int qtyDeliever;
+        
+        public int RequestListID
+        {
+            get { return requestListID; }
+            set { requestListID = value; }
+        }
+        public int QtyDeliever
+        {
+            get { return qtyDeliever; }
+            set { qtyDeliever = value; }
+        }
+        public int ItemID
+        {
+            get { return itemID; }
+            set { itemID = value; }
+        }
+        public int QtyRequest
+        {
+            get { return qtyRequest; }
+            set { qtyRequest = value; }
+        }
+    }
+      
+    }

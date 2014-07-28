@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DafestyModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DafestyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="IssueTrans" EntityType="DafestyModel.IssueTran" />
+    <EntitySet Name="Movies" EntityType="DafestyModel.Movy" />
+    <AssociationSet Name="FK_IssueTran_Movies1" Association="DafestyModel.FK_IssueTran_Movies1">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="IssueTran" EntitySet="IssueTrans" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="IssueTran">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="String" MaxLength="4" Unicode="true" FixedLength="false" />
+    <Property Name="VideoCode" Type="Int16" />
+    <Property Name="DateIssue" Type="DateTime" />
+    <Property Name="DateDue" Type="DateTime" />
+    <Property Name="DateActualReturn" Type="DateTime" />
+    <Property Name="RentalStatus" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="Remarks" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Movy" Relationship="DafestyModel.FK_IssueTran_Movies1" FromRole="IssueTran" ToRole="Movies" />
+  </EntityType>
+  <EntityType Name="Movy">
+    <Key>
+      <PropertyRef Name="VideoCode" />
+    </Key>
+    <Property Name="VideoCode" Type="Int16" Nullable="false" />
+    <Property Name="MovieTitle" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MovieType" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Rating" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="RentalPrice" Type="Single" />
+    <Property Name="Producer" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Director" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Media" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TotalStock" Type="Int16" />
+    <Property Name="NumberRented" Type="Int16" />
+    <NavigationProperty Name="IssueTrans" Relationship="DafestyModel.FK_IssueTran_Movies1" FromRole="Movies" ToRole="IssueTran" />
+  </EntityType>
+  <Association Name="FK_IssueTran_Movies1">
+    <End Role="Movies" Type="DafestyModel.Movy" Multiplicity="0..1" />
+    <End Role="IssueTran" Type="DafestyModel.IssueTran" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="VideoCode" />
+      </Principal>
+      <Dependent Role="IssueTran">
+        <PropertyRef Name="VideoCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

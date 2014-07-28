@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="LibraryEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="LibraryModel.Book" />
+    <EntitySet Name="Members" EntityType="LibraryModel.Member" />
+    <EntitySet Name="Staffs" EntityType="LibraryModel.Staff" />
+    <EntitySet Name="Transactions" EntityType="LibraryModel.Transaction" />
+    <AssociationSet Name="FK_Tran_Books" Association="LibraryModel.FK_Tran_Books">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tran_Members" Association="LibraryModel.FK_Tran_Members">
+      <End Role="Members" EntitySet="Members" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="Int16" Nullable="false" />
+    <Property Name="BookName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Author" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Publisher" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Category" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="TotalStock" Type="Int16" />
+    <Property Name="NumberLended" Type="Int16" />
+    <Property Name="Location" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Transactions" Relationship="LibraryModel.FK_Tran_Books" FromRole="Books" ToRole="Transactions" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="MemberName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Country" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Transactions" Relationship="LibraryModel.FK_Tran_Members" FromRole="Members" ToRole="Transactions" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="StaffID" />
+    </Key>
+    <Property Name="StaffID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="StaffName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StaffPassword" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="BookID" Type="Int16" Nullable="false" />
+    <Property Name="MemberID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="IssueDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DueDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ReturnDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Remarks" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Book" Relationship="LibraryModel.FK_Tran_Books" FromRole="Transactions" ToRole="Books" />
+    <NavigationProperty Name="Member" Relationship="LibraryModel.FK_Tran_Members" FromRole="Transactions" ToRole="Members" />
+  </EntityType>
+  <Association Name="FK_Tran_Books">
+    <End Role="Books" Type="LibraryModel.Book" Multiplicity="1" />
+    <End Role="Transactions" Type="LibraryModel.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tran_Members">
+    <End Role="Members" Type="LibraryModel.Member" Multiplicity="1" />
+    <End Role="Transactions" Type="LibraryModel.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Members">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

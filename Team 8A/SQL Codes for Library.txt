@@ -1,0 +1,39 @@
+Login Screen:
+select StaffID, StaffPassword from Staff
+
+
+Transaction Screen:
+
+Datagrid display for Personal Loan Status:
+select t.BookID, b.BookName, t.IssueDate, t.DueDate from Transactions t left outer join Books b on t.BookID = b.BookID
+where MemberID = 'M002' and Status = 'Out'
+
+Datagrid display for Customer Info Profile:
+select * from Members
+
+Datagrid display for Loan, Return Book:
+select * from Books
+
+on click 'Loan' Button:
+
+
+
+
+
+
+        SqlConnection cnTransactions;
+        SqlCommand cmShowStatus;
+        SqlDataAdapter daShowStatus;
+        DataSet dsShowStatus;
+        DataView dvShowStatus;
+
+
+
+ cnLogin = new SqlConnection(@"data source=(local); integrated security=SSPI;initial catalog=library");
+            cmSubmit = new SqlCommand("Select * from Staff", cnLogin);
+            daSubmit = new SqlDataAdapter(cmSubmit);
+            dsStaff = new DataSet();
+            cnLogin.Open();
+            daSubmit.Fill(dsStaff, "Staff");
+            dvStaff = new DataView();
+            dvStaff.Table = dsStaff.Tables["Staff"];

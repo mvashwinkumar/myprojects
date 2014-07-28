@@ -1,0 +1,93 @@
+<div id="cartContents">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h1>Shopping Cart</h1>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div id="cartMsgPane"></div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Stock</th>
+                        <th>Subtotal</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each this}}
+                    <tr>
+                        <td class="col-xs-4"><label id="lblName_{{productId}}">{{name}}</label></td>
+                        <td class="col-xs-2">{{currency (finalPrice price discount) }}</td>
+                        <td class="col-xs-2">
+
+                            <input type="number" id="inputNum_{{productId}}" class="form-control numberInput" data-productid="{{productId}}" data-maxStock ="{{maxStock}}" value="{{qty}}">
+
+
+
+
+                        </td>
+                        <td class="col-xs-1">
+                            <label class="badge" id="lblStock_{{productId}}" style="background-color: #28a4c9;color:white">{{stock}}</label>
+                        </td>
+                        <td class="col-xs-2">{{currency (mult qty price discount)}}</td>
+                        <td class="col-xs-2">                            
+                            <button  id="removeBtn_{{productId}}" class="btn btn-danger btn-sm" data-productid="{{productId}}"><span class="glyphicon glyphicon-minus-sign"></span> Remove
+                        </td>
+
+                    </tr>
+                    {{/each}}
+                    <tr>
+                        <td colspan="5"><p style="float:right;font-size:1.2em"><b>Grand Total:</b></p></td>
+                        <td><p style="float:right;font-size:1.2em">{{currency (grandtotal "qty" "price" this) }}</p></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="row" id="checkoutContent">    
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="row">
+            <div class="col-xs-4">
+                &nbsp;
+            </div>
+            <div class="col-xs-8" id="cartButtonDiv">
+                <button class="btn btn-primary" id="btnUpdate"><span class="glyphicon glyphicon-refresh"></span> Update Cart</button>
+                <button class="btn btn-success" id="btnCheckout"><span class="glyphicon glyphicon-ok-circle"></span> Check-out</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12" id="checkoutButtonDiv" style="display:none">
+                <center>
+                    <button class="btn btn-primary" id="btnCancelCheckout"><span class="glyphicon glyphicon-refresh"></span> Cancel Checkout</button>
+                    <button class="btn btn-success" id="btnOrder"><span class="glyphicon glyphicon-ok-circle"></span> Order </button>
+                </center>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        $(".numberInput").focus(function(event) {
+            
+            $(this).data("ex", $(this).val());
+        });
+        $(".numberInput").blur(function(event) {
+
+            var str = $(this).val();
+            
+            if (str == "")
+            {
+                $(this).val($(this).data("ex"));
+                console.log($(this).data("ex"));
+            }
+        });
+    });
+</script>

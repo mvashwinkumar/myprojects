@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <connectionStrings>
+    <add name="InvManagementEntities" connectionString="metadata=res://*/Entity.Inventory.csdl|res://*/Entity.Inventory.ssdl|res://*/Entity.Inventory.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=10.10.3.131;initial catalog=InvManagement;persist security info=True;user id=sa;password=sa37inv_1;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+</configuration>

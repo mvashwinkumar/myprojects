@@ -1,0 +1,15 @@
+{{#each this}}
+<tr>
+    <td>{{name}}</td>
+    <td>{{qty}}</td>
+    <td>{{currency (finalPrice price discount)}}</td>
+    <td>{{currency (mult qty price discount)}}</td>                   
+</tr>
+{{/each}}
+<tr>
+    <td colspan="3"><p style="float:right"><b>Grand Total:</b></p></td>
+    <td>{{currency (grandtotal "qty" "price" this) }}</td>
+</tr>
+<tr>
+    <td colspan="4"><center><p>click on "My Cart" to edit your cart contents</p></center></td>
+</tr>

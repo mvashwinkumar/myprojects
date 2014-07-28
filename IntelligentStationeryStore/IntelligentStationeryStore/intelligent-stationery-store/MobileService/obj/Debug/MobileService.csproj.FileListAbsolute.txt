@@ -1,0 +1,134 @@
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\MobileService.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\MobileService.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\AjaxControlToolkit.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\AjaxMin.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\com.iss.inventory.exe
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\HtmlAgilityPack.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\Microsoft.Data.Edm.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\Microsoft.Data.OData.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\System.Spatial.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\com.iss.inventory.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\HtmlAgilityPack.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\HtmlAgilityPack.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\Microsoft.Data.Edm.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\Microsoft.Data.OData.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\System.Spatial.xml
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\de\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\es\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\fr\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\it\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ja\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ko\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\ru\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\obj\Debug\MobileService.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\obj\Debug\MobileService.dll
+C:\Users\User\Documents\Visual Studio 2010\Projects\IntelligentStationeryStore\IntelligentStationeryStore\ intelligent-stationery-store\MobileService\obj\Debug\MobileService.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\obj\Debug\MobileService.csprojResolveAssemblyReference.cache
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\MobileService.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\MobileService.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\AjaxControlToolkit.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\AjaxMin.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\com.iss.inventory.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\HtmlAgilityPack.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Microsoft.Data.Edm.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Microsoft.Data.OData.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Microsoft.WindowsAzure.Storage.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Staionery_Inventory.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\System.Spatial.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\com.iss.inventory.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Staionery_Inventory.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\HtmlAgilityPack.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\HtmlAgilityPack.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Microsoft.Data.Edm.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Microsoft.Data.OData.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\Microsoft.WindowsAzure.Storage.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\System.Spatial.xml
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ar\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\cs\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\de\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\es\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\fr\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\he\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\hi\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\it\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ja\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ko\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\nl\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\pl\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\pt\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ru\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\de\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\es\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\it\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\de\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\es\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\fr\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\it\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ja\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ko\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ru\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\de\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\es\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\fr\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\it\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ja\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ko\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\ru\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\zh-Hans\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\bin\zh-Hant\System.Spatial.resources.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\obj\Debug\MobileService.dll
+D:\IntelligentStationeryStore\IntelligentStationeryStore\intelligent-stationery-store\MobileService\obj\Debug\MobileService.pdb

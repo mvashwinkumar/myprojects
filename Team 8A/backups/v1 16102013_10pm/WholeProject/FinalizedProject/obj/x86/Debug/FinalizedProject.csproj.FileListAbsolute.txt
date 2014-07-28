@@ -1,0 +1,27 @@
+D:\Iss\FinalizedProject\bin\Debug\FinalizedProject.exe.config
+D:\Iss\FinalizedProject\bin\Debug\FinalizedProject.exe
+D:\Iss\FinalizedProject\bin\Debug\FinalizedProject.pdb
+D:\Iss\FinalizedProject\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Iss\FinalizedProject\obj\x86\Debug\FinalizedProject.Book_form.resources
+D:\Iss\FinalizedProject\obj\x86\Debug\FinalizedProject.Form_Login.resources
+D:\Iss\FinalizedProject\obj\x86\Debug\FinalizedProject.Member_Form.resources
+D:\Iss\FinalizedProject\obj\x86\Debug\FinalizedProject.Properties.Resources.resources
+D:\Iss\FinalizedProject\obj\x86\Debug\FinalizedProject.SearchBooks.resources
+D:\Iss\FinalizedProject\obj\x86\Debug\FinalizedProject.Form_Transactions.resources
+D:\Iss\FinalizedProject\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Iss\FinalizedProject\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Iss\FinalizedProject\obj\x86\Debug\FinalizedProject.exe
+D:\Iss\FinalizedProject\obj\x86\Debug\FinalizedProject.pdb
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\bin\Debug\FinalizedProject.exe.config
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.exe
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.pdb
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\bin\Debug\FinalizedProject.exe
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\bin\Debug\FinalizedProject.pdb
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.csprojResolveAssemblyReference.cache
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.Book_form.resources
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.Form_Login.resources
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.Member_Form.resources
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.Properties.Resources.resources
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.SearchBooks.resources
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.Form_Transactions.resources
+D:\Team 8A\backups\v1 16102013_10pm\WholeProject\FinalizedProject\obj\x86\Debug\FinalizedProject.csproj.GenerateResource.Cache
