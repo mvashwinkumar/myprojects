@@ -1,0 +1,227 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CA.master.cs" Inherits="webCA.CA" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .style1
+        {
+            width: 1200px;
+        }
+        .style2
+        {
+            width: 128%;
+        }
+        .style3
+        {
+        }
+        .style4
+        {
+            width: 931px;
+            height: 23px;
+            text-align: left;
+        }
+        .style5
+        {
+            height: 23px;
+        }
+        .style6
+        {
+            width: 98%;
+            margin-left: 2px;
+        }
+        .style7
+        {
+            height: 237px;
+        }
+        .style8
+        {
+            height: 20px;
+        }
+        .style9
+        {}
+        .auto-style1 {
+            width: 1005px;
+            height: 50px;
+        }
+        .auto-style2 {
+            width: 195px;
+            height: 50px;
+            text-align: left;
+        }
+        .auto-style3 {
+            width: 930px;
+        }
+        .auto-style4 {
+            width: 930px;
+            height: 23px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align: center">
+        <br />
+        
+        
+            <table class="style1">
+                <tr>
+                    <td class="auto-style3">
+                        <table class="style2">
+                            <tr>
+                                <td class="style8" colspan="2">
+                                    <asp:Image ID="Image2" runat="server" Height="250px" ImageUrl="~/Presentation/Images/Hotel-du-Louvre-P073-Exterior-Fountain-Day-1280x427.jpg" Width="1168px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style1">
+                                    <asp:LinkButton ID="LinkButton1" runat="server" BackColor="Yellow" 
+                                        BorderColor="White" BorderStyle="Outset" Font-Underline="False" 
+                                        ForeColor="Black" Width="75px" 
+                                        PostBackUrl="~/Presentation/WelcomePageNew.aspx">Home</asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButton18" runat="server" BackColor="Yellow" BorderColor="White" BorderStyle="Outset" 
+                                        Font-Underline="False" ForeColor="Black" 
+                                        PostBackUrl="~/Presentation/selectroomN.aspx">Search Room</asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButtonPersonalInfo" runat="server" 
+                                        BackColor="Yellow" BorderColor="White" BorderStyle="Outset" 
+                                        Font-Underline="False" ForeColor="Black" onclick="LinkButtonPersonalInfo_Click" 
+                                        PostBackUrl="~/Presentation/personal information new.aspx">Personal Info</asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButtonOrderHistory" runat="server" BackColor="Yellow" 
+                                        BorderColor="White" BorderStyle="Outset" 
+                                        Font-Underline="False" ForeColor="Black" 
+                                        PostBackUrl="~/Presentation/userorderhistory.aspx">Order History</asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButton9" runat="server" BackColor="Yellow" 
+                                        BorderColor="White" BorderStyle="Outset" 
+                                        Font-Underline="False" ForeColor="Black" 
+                                        PostBackUrl="~/Presentation/Contact us.aspx">Contact Us</asp:LinkButton>
+                                    <asp:LinkButton ID="btnAdminRoom" runat="server" 
+                                        BackColor="Yellow" BorderColor="White" BorderStyle="Outset" 
+                                        Font-Underline="False" ForeColor="Black" 
+                                        PostBackUrl="~/Presentation/Admin_room.aspx">Admin Room</asp:LinkButton>
+                                    <asp:LinkButton ID="btnAdminLogin" runat="server" 
+                                        BackColor="Yellow" BorderColor="White" BorderStyle="Outset" 
+                                        Font-Underline="False" ForeColor="Black" 
+                                        PostBackUrl="~/Presentation/Admin_login.aspx">Admin Login</asp:LinkButton>
+                                    <asp:LinkButton ID="btnAdminCustomer" runat="server" 
+                                        BackColor="Yellow" BorderColor="White" BorderStyle="Outset" 
+                                        Font-Underline="False" ForeColor="Black" 
+                                        PostBackUrl="~/Presentation/Admin_Customer.aspx">Admin Customer</asp:LinkButton>
+                                    <asp:LinkButton ID="btnAdminOrder" runat="server" 
+                                        BackColor="Yellow" BorderColor="White" BorderStyle="Outset" 
+                                        Font-Underline="False" ForeColor="Black" 
+                                        PostBackUrl="~/Presentation/Admin_Order.aspx">Admin Order</asp:LinkButton>
+                                    <br />
+                                    <br />
+                                    <asp:Label ID="lblUserName" runat="server" Font-Bold="True" ForeColor="#3333CC"></asp:Label>
+                                    </td>
+                                <td class="auto-style2">
+                                    <asp:LinkButton 
+                                        ID="btnLogin" runat="server" Font-Bold="True" 
+                                        ForeColor="Black" PostBackUrl="~/Presentation/login.aspx">Login</asp:LinkButton>
+                                    &nbsp;<asp:LinkButton ID="btnLogout" runat="server" Font-Bold="True" Font-Overline="False" Font-Underline="True" ForeColor="Black" PostBackUrl="~/Presentation/WelcomePageNew.aspx" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+                                    <asp:LinkButton ID="btnRegister" runat="server" Font-Bold="True" 
+                                        ForeColor="Black" 
+                                        PostBackUrl="~/Presentation/Register.aspx">Register</asp:LinkButton>
+                                &nbsp;
+                                    </td>
+                            </tr>
+                        </table>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="auto-style4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td class="style5">
+                        <table class="style6">
+                            <tr>
+                                <td class="style7">
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <asp:Label ID="Label2" runat="server" Font-Size="X-Large" ForeColor="Red" 
+                                        Text="Currency Converter"></asp:Label>
+                                    <br />
+                                    <br />
+                                    <asp:Label ID="Label3" runat="server" Text="From"></asp:Label>
+&nbsp;&nbsp;
+                                    <asp:DropDownList ID="DropDownList1" runat="server">
+                                        <asp:ListItem>US Dollar</asp:ListItem>
+                                        <asp:ListItem>SG Dollar</asp:ListItem>
+                                        <asp:ListItem>Chinese Yuan</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <br />
+                                    <asp:Label ID="Label4" runat="server" Text="To"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:DropDownList ID="DropDownList2" runat="server">
+                                        <asp:ListItem>SG Dollar</asp:ListItem>
+                                        <asp:ListItem>US Dollar</asp:ListItem>
+                                        <asp:ListItem>Chinese Yuan</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <br />
+                                    <br />
+                                    <asp:Label ID="Label5" runat="server" Text="Amount"></asp:Label>
+&nbsp;(from)&nbsp;
+                                    <asp:TextBox ID="TextBox1" runat="server" Width="100px"></asp:TextBox>
+                                    <br />
+                                    <br />
+                                    <asp:Button ID="Button1" runat="server" Text="Convert" />
+                                    <br />
+                                    <br />
+                                    <asp:Label ID="Label6" runat="server" Text="Amount"></asp:Label>
+&nbsp;(to)&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:TextBox ID="TextBox2" runat="server" Width="100px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br />
+                                    <asp:Label ID="Label7" runat="server" Font-Size="X-Large" ForeColor="Red" 
+                                        Text="Today's Weather"></asp:Label>
+                                    <br />
+                                    <br />
+                                    XXXXXXXXX/>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style3" bgcolor="Yellow" colspan="2">
+                    
+                        <asp:LinkButton ID="LinkButton13" runat="server" 
+                            PostBackUrl="~/Presentation/Contact us.aspx">Contact Us</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:LinkButton ID="LinkButton14" runat="server" 
+                            PostBackUrl="~/Presentation/selectroomN.aspx">Room</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:LinkButton ID="LinkButton15" runat="server" 
+                            PostBackUrl="~/Presentation/privatepolicynew.aspx">Policies</asp:LinkButton>
+                        </td>
+                </tr>
+            </table>
+        
+        
+    </div>
+    </form>
+</body>
+</html>

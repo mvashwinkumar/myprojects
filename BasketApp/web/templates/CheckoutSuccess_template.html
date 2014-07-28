@@ -1,0 +1,59 @@
+<div id="cartContents">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h1>Thank you for shopping with us!</h1>
+        <p><h4>Your orders are as follows:</h4></p>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div id="cartMsgPane"></div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each this}}
+                    <tr>
+                        <td class="col-xs-5">{{name}}</td>
+                        <td class="col-xs-2">{{currency price}}</td>
+                        <td class="col-xs-1"><label>{{qty}}</label></td>
+                        <td class="col-xs-2">{{currency (mult qty price)}}</td>
+                    </tr>
+                    {{/each}}
+                    <tr>
+                        <td colspan="3"><p style="float:right"><b>Grand Total:</b></p></td>
+                        <td>{{currency (grandtotal "qty" "price" this) }}</td>                        
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+        <div class="row" id="checkoutContent">
+            <div class="col-xs-5">
+            <h3>Delivery Address</h3>
+            <address>{{address}}</address>
+            </div>
+            <div class="col-xs-7">&nbsp;</div>
+        </div>
+        
+    </div>
+    <div class="modal-footer">
+        <div class="row">
+            <div class="col-xs-4">
+                &nbsp;
+            </div>
+            <div class="col-xs-8">
+                <button class="btn btn-primary" id="btnClose"><span class="glyphicon"></span>Thank you!</button>                
+            </div>
+
+        </div>
+
+    </div>
+</div>
